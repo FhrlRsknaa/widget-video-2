@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- The actual video frame image -->
+    <ImageView
+        android:id="@+id/widget_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Video Frame" />
+
+    <!-- Optional soft dark gradient at the bottom for aesthetic text readability -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/widget_bottom_gradient" />
+
+    <!-- Styled Title text overlays -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Widget Video"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:singleLine="true" />
+            
+        <TextView
+            android:id="@+id/widget_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap to play"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Overlay play state button indicator -->
+    <ImageView
+        android:id="@+id/widget_play_badge"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="8dp"
+        android:src="@android:drawable/ic_media_play"
+        android:tint="#FFFFFF"
+        android:alpha="0.6"
+        android:contentDescription="Play Status" />
+
+</FrameLayout>

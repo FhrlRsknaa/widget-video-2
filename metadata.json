@@ -1,0 +1,6 @@
+{
+  "name": "Widget Video",
+  "description": "Aplikasi super simple untuk membuat video favorit menjadi widget bergerak (animasi GIF-like) di home screen Anda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
